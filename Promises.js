@@ -18,5 +18,5 @@ const pro2 = () => {
 
 }
 pro2();
-console.log(pro1)
+
 
