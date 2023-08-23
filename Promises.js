@@ -1,6 +1,4 @@
 
-
-
 const promise1 = new Promise((resolve, reject) => {
     if (true) {
         resolve('promise message!!!')
