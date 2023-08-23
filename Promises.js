@@ -1,22 +1,23 @@
-const ready = true;
-const pro1 = new Promise((resolve, reject) => {
-    if (ready) {
-        const check1 = 'Promise message';
-        resolve(check1)
+
+
+
+const promise1 = new Promise((resolve, reject) => {
+    if (true) {
+        resolve('promise message!!!')
+
     } else {
-        const check2 = 'not Promised'
-        reject(check2);
+        reject('not Promised!!!');
     }
 })
-const pro2 = () => {
-    pro1.then(val => {
-        console.log(val)
-    }
-    ).catch(err => {
-        console.log(err)
-    })
 
+promise1.then(val => {
+    console.log(val)
 }
-pro2();
+).catch(err => {
+    console.log(err)
+})
+console.log(promise1);
+
+
 
 
